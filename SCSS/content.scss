@@ -1,0 +1,138 @@
+@import "../SCSS/variables";
+
+// Target SECOND row
+.grid-container {
+    .content{
+        grid-area: content;
+
+        // To constraint's all the item inside the container to 70% aka whitespace left and right
+        .content-item {
+            width: 70%;
+            margin: 0 auto; // Place all the items centred horizontally
+        }
+
+        // Title section
+        // Title
+        #syaz-amirin-title {
+            color: $secondary-colour;
+            text-align: center;
+            padding-top: 1em;
+            font-size: 2.5em;
+            margin-bottom: 0.3em;
+        }
+
+        // Subtitle
+        #syaz-amirin-subtitle {
+            color: $secondary-colour;
+            text-align: center;
+            font-size: $secondary-font-size;
+            font-weight: 400;
+        }
+
+        // Social media buttons
+        .soc-med-btns {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            margin-top: 3.5em;
+            
+            ul { // The items itself
+                padding-left: 0;
+                margin: 0 20px;
+               img { // The images of the items
+                    width: 30px;
+                    height: 30px;
+               }
+            }
+
+            #email-btn { // Just for the email's icon
+                padding-left: 0;
+                margin: 0 20px;
+                img {
+                    width: 30px;
+                    height: 32px;
+                }
+               }
+        }
+
+        // About me section
+        .about-me-section {
+            margin-top: 6em;
+            #about-me-title {
+                margin-bottom: 0.5em;
+                text-decoration: underline;
+            }
+        }
+
+        // Projects section
+        .projects-section { // All project's items
+            margin-top: 6em;
+
+            button { // All the buttons inside Projects
+                color: black;
+                background-color: $ui-primary-colour;
+
+                font-size: $secondary-font-size;
+                font-weight: bold;
+
+                width: 100%;
+                padding: 0.5em 0;
+
+                border-radius: 25px;
+                border: 0;
+            }
+
+            #projects-title { // The literal title of the project section
+                text-decoration: underline;
+                margin-bottom: 0.3em;
+            }
+
+            .project-tinta { // Make the tinta's project as flex
+                display: flex;
+                .project-tinta-col { // Separate two items inside tinta as two column same space
+                    flex: 1;
+                    padding: 1em;
+                    height: 8em; // Height for each columns
+                    margin-top: 1em;
+                }
+
+                .project-tinta-image { // First column
+                    background-color: black;
+                    border-radius: 1em;
+                }
+
+                .project-tinta-text { // Second column
+                    display: grid;
+                    margin-top: -1.1em;
+                    #project-tinta-title {
+                         // Make the second column not too down
+                        margin-bottom: 0;
+                        font-size: $primary-font-size;
+                        align-self: start;
+                    }
+
+                    #project-tinta-description {
+                        font-size: $secondary-font-size;
+                        margin-top: 0.4em;
+                    }
+                }
+            }
+        }
+    }
+    // Choose the SECOND row of the .grid-container aka content
+    > main:nth-child(2) {
+        justify-items: center;
+    }
+}
+
+// Tablets
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .projects-section { // All project's items
+        margin-top: 6em;
+
+        button { // All the buttons inside Projects
+            width: 50%;
+            padding: 1em 0;
+        }
+    }
+}

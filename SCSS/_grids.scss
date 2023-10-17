@@ -1,0 +1,15 @@
+@import "../SCSS/variables";
+
+@mixin init_grid {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "content"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 2fr 60px;
+}
+
+.grid-container { // Make grid fill the screen
+    height: 100vh;
+}

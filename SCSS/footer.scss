@@ -1,0 +1,25 @@
+@import "../SCSS/variables";
+
+.grid-container {
+    .footer {
+        grid-area: footer;
+        background-color: black;
+        height: 60px;
+
+        display: flex; // Make it flex so easier centring texts  
+        justify-content: center; // Horizontally center items
+        align-items: center; // Vertically center items
+
+        margin-top: 2em;
+
+        .content-item {
+            width: 70%;
+            margin: 0 auto; // Place all the items centred horizontally
+            text-align: center;
+        }
+
+        #footer-text {
+            font-size: 0.9em;
+        }
+    }
+}

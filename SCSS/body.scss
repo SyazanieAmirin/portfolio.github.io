@@ -1,0 +1,14 @@
+@import "../SCSS/variables";
+@import "../SCSS/grids";
+
+.grid-container {
+    @include init_grid; // Initialize grids
+}
+
+body {
+    margin: 0;
+    background-color: $bg-colour;
+    color: $primary-colour;
+
+    font-family: $font-stack;
+}

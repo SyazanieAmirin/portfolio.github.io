@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Syazanie Amirin</title>
+
+    <link rel="stylesheet" type="text/css" href="/SCSS/body.css">
+    <link rel="stylesheet" type="text/css" href="/SCSS/navbar.css">
+    <link rel="stylesheet" type="text/css" href="/SCSS/content.css">
+    <link rel="stylesheet" type="text/css" href="/SCSS/footer.css">
+    
+    <!-- Load the font Inter from Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "grid-container">
+        <!-- Main navbar -->
+        <nav class = "header"> 
+            <h1 class = "navbar-item" id = "current-page-title">Home</h1>
+        </nav>
+        
+        <main class = "content">
+            <div class = "title-section">
+                <h1 class = "content-item" id = "syaz-amirin-title">Syazanie Amirin</h1>
+                <h3 class = "content-item" id = "syaz-amirin-subtitle">A developer from Penang, Malaysia</h3>
+                <div class = "soc-med-btns content-item">
+                    <!--NANTI TUKAR LINKS!! - TAMBAH FOOTER-->
+                    <ul id = "email-btn"><a href = "mailto:syazanieamirin@icloud.com"><img src="/Images/Email.svg" alt = "Email icon's button"/></a></ul>
+                    <ul id = "github-btn"><img src="/Images/Github.svg" alt = "Github icon's button"/></ul>
+                    <ul id = "insta-btn"><img src="/Images/Insta.svg" alt = "Instagram icon's button"/></ul>
+                    <ul id = "linkedin-btn"><img src="/Images/Linkedin.svg" alt = "Linkedin icon's button"/></ul>
+                </div>
+            </div>
+            <div class = "about-me-section">
+                <h2 class = "content-item" id = "about-me-title">About</h2>
+                <p class = "content-item" id = "about-me">Hello! My name is Syazanie Amirin and currently pursuing a degree in <strong>Software Engineering</strong> at Universiti Kuala Lumpur MIIT, Malaysia. My main focus is pretty much only on <strong>UI/UX designs</strong>, <strong>Python</strong> projects but I've also been delving into <strong>web development</strong>. At least the <strong>front-end</strong> part of it.</p>
+            </div>
+            <div class = projects-section>
+                <h2 class = "content-item" id = "projects-title">Projects</h2>
+                <div class = "project-tinta content-item">
+                    <!--First column-->
+                    <div class = "project-tinta-image project-tinta-col">
+                        <p>hello</p>
+                    </div>
+                    <!--Second column-->
+                    <div class = "project-tinta-text project-tinta-col">
+                        <!--MAKE THIS MORE DRY NANTI. BUH CLASS INSTEAD OF TEXT-->
+                        <h3 class = "project-item" id = "project-tinta-title">Test</h3>
+                        <p class = "project-item" id = "project-tinta-description">This is a test.</p>
+                        <button type = "button" class = "project-item" id = "project-tinta-button">View</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class = "footer">
+            <p class = "content-item" id = "footer-text">Designed in <strong>Figma</strong>, and built using only <strong>vanilla HTML, CSS</strong>, and <strong>JavaScript</strong> — all by me ❤️</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.grid-container .footer {
+  grid-area: footer;
+  background-color: black;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+.grid-container .footer .content-item {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.grid-container .footer #footer-text {
+  font-size: 0.9em;
+}/*# sourceMappingURL=footer.css.map */
