@@ -7,7 +7,8 @@
 
         // To constraint's all the item inside the container to 70% aka whitespace left and right
         .content-item {
-            width: 80%;
+            max-width: 800px; // Make the container as 800px wide MAXIMUM
+            width: 80%; // Take 80& only of the 800px reserved space
             margin: 0 auto; // Place all the items centred horizontally
         }
 
@@ -125,17 +126,5 @@
     // Choose the SECOND row of the .grid-container aka content
     > main:nth-child(2) {
         justify-items: center;
-    }
-}
-
-// Tablets
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .projects-section { // All project's items
-        margin-top: 6em;
-
-        button { // All the buttons inside Projects
-            width: 50%;
-            padding: 1em 0;
-        }
     }
 }
