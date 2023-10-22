@@ -4,18 +4,62 @@
 
 .grid-container .header {
   grid-area: header;
+  display: flex;
   background: rgba(36, 36, 36, 0.1);
   -webkit-backdrop-filter: blur(13.5px);
           backdrop-filter: blur(13.5px);
   border-bottom: 2px solid #132434;
+  justify-content: space-between;
   align-self: center;
   position: sticky;
   top: 0;
   z-index: 100; /* Ensure it's above other elements */
   overflow-anchor: none;
+  /* Media query for iPad and larger screens */
 }
 .grid-container .header #current-page-title {
-  margin-left: 3em;
+  margin-left: 2.5em;
   color: #CAE2FF;
   font-size: 1.2em;
+}
+.grid-container .header .hamburger-menu {
+  align-self: center;
+  margin-right: 2.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.grid-container .header .hamburger-menu .hamburger-dash {
+  width: 1.8em;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.493);
+}
+.grid-container .header .hamburger-menu #hamburger-dash-1 {
+  margin-bottom: 0.2em;
+}
+.grid-container .header .hamburger-menu #hamburger-dash-2 {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+.grid-container .header .hamburger-menu #hamburger-dash-3 {
+  margin-top: 0.2em;
+}
+.grid-container .header .navbar-links {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .grid-container .header .navbar-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-right: auto;
+    margin-left: 2em;
+    align-self: center;
+  }
+  .grid-container .header .navbar-links .navbar-links-item {
+    padding: 0em 1em 0em 1em;
+  }
+  .grid-container .header .hamburger-menu {
+    display: none;
+  }
 }/*# sourceMappingURL=navbar.css.map */

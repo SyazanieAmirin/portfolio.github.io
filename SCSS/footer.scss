@@ -1,4 +1,4 @@
-@import "SCSS/variables";
+@import "../SCSS/variables";
 
 .grid-container {
     .footer {
@@ -10,7 +10,7 @@
         justify-content: center; // Horizontally center items
         align-items: center; // Vertically center items
 
-        margin-top: 2em;
+        margin-top: 4em;
 
         .content-item {
             width: 70%;

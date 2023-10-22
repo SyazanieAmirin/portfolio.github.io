@@ -2,7 +2,7 @@
   grid-area: content;
 }
 .grid-container .content .content-item {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 .grid-container .content #syaz-amirin-title {
@@ -41,7 +41,7 @@
   height: 32px;
 }
 .grid-container .content .about-me-section {
-  margin-top: 6em;
+  margin-top: 4em;
 }
 .grid-container .content .about-me-section #about-me-title {
   margin-bottom: 0.5em;
@@ -66,6 +66,8 @@
 }
 .grid-container .content .projects-section .project-tinta {
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 .grid-container .content .projects-section .project-tinta .project-tinta-col {
   flex: 1;

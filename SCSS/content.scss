@@ -1,4 +1,4 @@
-@import "SCSS/variables";
+@import "../SCSS/variables";
 
 // Target SECOND row
 .grid-container {
@@ -7,7 +7,7 @@
 
         // To constraint's all the item inside the container to 70% aka whitespace left and right
         .content-item {
-            width: 70%;
+            width: 80%;
             margin: 0 auto; // Place all the items centred horizontally
         }
 
@@ -57,7 +57,7 @@
 
         // About me section
         .about-me-section {
-            margin-top: 6em;
+            margin-top: 4em;
             #about-me-title {
                 margin-bottom: 0.5em;
                 text-decoration: underline;
@@ -89,8 +89,11 @@
 
             .project-tinta { // Make the tinta's project as flex
                 display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+
                 .project-tinta-col { // Separate two items inside tinta as two column same space
-                    flex: 1;
+                    flex: 1; // Filled the spaced container
                     padding: 1em;
                     height: 8em; // Height for each columns
                     margin-top: 1em;
