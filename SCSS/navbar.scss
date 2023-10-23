@@ -80,18 +80,32 @@
         }
     }
 
-    #mobile-menu-opened { // The blurrer
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+}
 
-        z-index: 9;
+#mobile-menu-opened { // The blurrer
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-        background: rgba(36, 36, 36, 0.10);
-        backdrop-filter: blur(27.5px);
+    z-index: 9;
 
-        visibility: hidden; // Initial visibility
+    background: rgba(36, 36, 36, 0.10);
+    backdrop-filter: blur(27.5px);
+
+    visibility: hidden; // Initial visibility
+    .navbar-items-mobile-menu {
+        margin-top: 5em;
+        margin-left: 3em;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 1.5em;
+
+        font-weight: bold;
+        text-decoration: underline;
+        text-underline-offset: 4px;
     }
 }
