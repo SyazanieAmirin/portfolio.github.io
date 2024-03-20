@@ -1,0 +1,88 @@
+.grid-container {
+  height: 100vh;
+}
+
+.grid-container .header {
+  grid-area: header;
+  display: flex;
+  background: rgba(36, 36, 36, 0.1);
+  -webkit-backdrop-filter: blur(13.5px);
+          backdrop-filter: blur(13.5px);
+  border-bottom: 2px solid #132434;
+  justify-content: space-between;
+  align-self: center;
+  position: sticky;
+  top: 0;
+  z-index: 999; /* Ensure it's above other elements */
+  overflow-anchor: none;
+}
+.grid-container .header #current-page-title {
+  margin-left: 2.5em;
+  color: #CAE2FF;
+  font-size: 1.2em;
+}
+.grid-container .header .hamburger-menu {
+  align-self: center;
+  margin-right: 2.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.grid-container .header .hamburger-menu .hamburger-dash {
+  width: 1.8em;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.493);
+}
+.grid-container .header .hamburger-menu #hamburger-dash-1 {
+  margin-bottom: 0.2em;
+}
+.grid-container .header .hamburger-menu #hamburger-dash-2 {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+.grid-container .header .hamburger-menu #hamburger-dash-3 {
+  margin-top: 0.2em;
+}
+.grid-container .header .navbar-links {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .grid-container .header .navbar-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-right: auto;
+    margin-left: 2em;
+    align-self: center;
+  }
+  .grid-container .header .navbar-links .navbar-links-item {
+    padding: 0em 1em 0em 1em;
+  }
+  .grid-container .header .hamburger-menu {
+    display: none;
+  }
+}
+
+#mobile-menu-opened {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background: rgba(36, 36, 36, 0.1);
+  -webkit-backdrop-filter: blur(27.5px);
+          backdrop-filter: blur(27.5px);
+  visibility: hidden;
+}
+#mobile-menu-opened .navbar-items-mobile-menu {
+  margin-top: 5em;
+  margin-left: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1.5em;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

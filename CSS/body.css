@@ -1,0 +1,17 @@
+.grid-container {
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header" "content" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 2fr 80px;
+}
+
+body {
+  margin: 0;
+  background-color: #040C17;
+  color: #CAE2FF;
+  font-family: "Inter", sans-serif;
+}

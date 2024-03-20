@@ -1,0 +1,98 @@
+.grid-container .content {
+  grid-area: content;
+}
+.grid-container .content .content-item {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+}
+.grid-container .content #syaz-amirin-title {
+  color: white;
+  text-align: center;
+  padding-top: 1em;
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+}
+.grid-container .content #syaz-amirin-subtitle {
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.grid-container .content .soc-med-btns {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 3.5em;
+}
+.grid-container .content .soc-med-btns ul {
+  padding-left: 0;
+  margin: 0 20px;
+}
+.grid-container .content .soc-med-btns ul img {
+  width: 30px;
+  height: 30px;
+}
+.grid-container .content .soc-med-btns #email-btn {
+  padding-left: 0;
+  margin: 0 20px;
+}
+.grid-container .content .soc-med-btns #email-btn img {
+  width: 30px;
+  height: 32px;
+}
+.grid-container .content .about-me-section {
+  margin-top: 4em;
+}
+.grid-container .content .about-me-section #about-me-title {
+  margin-bottom: 0.5em;
+  text-decoration: underline;
+}
+.grid-container .content .projects-section {
+  margin-top: 6em;
+}
+.grid-container .content .projects-section button {
+  color: black;
+  background-color: #9DB3FF;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 100%;
+  padding: 0.5em 0;
+  border-radius: 25px;
+  border: 0;
+  transition: background-color 0.2s;
+}
+.grid-container .content .projects-section button:hover {
+  background-color: #7F94FF;
+  cursor: pointer;
+}
+.grid-container .content .projects-section #projects-title {
+  text-decoration: underline;
+  margin-bottom: 0.3em;
+}
+.grid-container .content .projects-section .project-tinta {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.grid-container .content .projects-section .project-tinta .project-tinta-col {
+  flex: 1;
+  margin-right: 2em;
+  margin-top: 1em;
+}
+.grid-container .content .projects-section .project-tinta .project-tinta-text {
+  display: grid;
+  margin-top: -1.1em;
+}
+.grid-container .content .projects-section .project-tinta .project-tinta-text #project-tinta-title {
+  margin-bottom: 0;
+  font-size: 1.5em;
+  align-self: start;
+}
+.grid-container .content .projects-section .project-tinta .project-tinta-text #project-tinta-description {
+  font-size: 1.2em;
+  margin-top: 0.4em;
+}
+.grid-container > main:nth-child(2) {
+  justify-items: center;
+}

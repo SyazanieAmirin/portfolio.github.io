@@ -1,84 +1,102 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
+
 <head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Syazanie Amirin</title>
 
-    <link rel="stylesheet" type="text/css" href="SCSS/body.css">
-    <link rel="stylesheet" type="text/css" href="SCSS/navbar.css">
-    <link rel="stylesheet" type="text/css" href="SCSS/content.css">
-    <link rel="stylesheet" type="text/css" href="SCSS/footer.css">
-    
+    <link rel="stylesheet" type="text/css" href="CSS/body.css">
+    <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
+    <link rel="stylesheet" type="text/css" href="CSS/content.css">
+    <link rel="stylesheet" type="text/css" href="CSS/footer.css">
+
     <!-- Load the font Inter from Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class = "grid-container">
+    <div class="grid-container">
         <!-- Main navbar -->
-        <nav class = "header"> 
-            <h1 class = "navbar-item" id = "current-page-title">Home</h1>
-            <div class = "navbar-links">
-                <p class = "navbar-links-item" id = "about-link">About</p>
-                <p class = "navbar-links-item" id = "projects-link">Projects</p>
-                <p class = "navbar-links-item" id = "contact-me-link">Contact Me</p>
+        <nav class="header">
+            <h1 class="navbar-item" id="current-page-title">Home</h1>
+            <div class="navbar-links">
+                <p class="navbar-links-item" id="about-link" style="opacity: 0.3;">About</p>
+                <p class="navbar-links-item" id="projects-link" style="opacity: 0.3;">Projects</p>
+                <p class="navbar-links-item" id="contact-me-link" style="opacity: 0.3;">Contact Me</p>
             </div>
-            <div class = "hamburger-menu" onclick = "toggleNavbarBlurrer()">
-                <div class = "hamburger-dash" id = "hamburger-dash-1"></div>
-                <div class = "hamburger-dash" id = "hamburger-dash-2"></div>
-                <div class = "hamburger-dash" id = "hamburger-dash-3"></div>
+            <div class="hamburger-menu" onclick="toggleNavbarBlurrer()">
+                <div class="hamburger-dash" id="hamburger-dash-1"></div>
+                <div class="hamburger-dash" id="hamburger-dash-2"></div>
+                <div class="hamburger-dash" id="hamburger-dash-3"></div>
             </div>
         </nav>
-        
-        <main class = "content">
-            <div class = "title-section">
-                <h1 class = "content-item" id = "syaz-amirin-title">Syazanie Amirin</h1>
-                <h3 class = "content-item" id = "syaz-amirin-subtitle">A developer from Penang, Malaysia</h3>
-                <div class = "soc-med-btns content-item">
+
+        <main class="content">
+            <div class="title-section">
+                <h1 class="content-item" id="syaz-amirin-title">Syazanie Amirin</h1>
+                <h3 class="content-item" id="syaz-amirin-subtitle">A developer from Penang, Malaysia</h3>
+                <div class="soc-med-btns content-item">
                     <!--NANTI TUKAR LINKS!! - TAMBAH FOOTER-->
-                    <ul id = "email-btn"><a href = "mailto:syazanieamirin@icloud.com"><img src="Images/Email.svg" alt = "Email icon's button"/></a></ul>
-                    <ul id = "github-btn"><img src="Images/Github.svg" alt = "Github icon's button"/></ul>
-                    <ul id = "insta-btn"><img src="Images/Insta.svg" alt = "Instagram icon's button"/></ul>
-                    <ul id = "linkedin-btn"><img src="Images/Linkedin.svg" alt = "Linkedin icon's button"/></ul>
+                    <ul id="email-btn"><a href="mailto:syazanieamirin@icloud.com"><img src="Images/Email.svg"
+                                alt="Email icon's button" /></a></ul>
+
+                    <ul id="github-btn"><a href="https://github.com/SyazanieAmirin" target="_blank"><img
+                                src="Images/Github.svg" alt="Github icon's button" /></a></ul>
+
+                    <ul id="insta-btn"><a href="https://www.instagram.com/syazanieothman/" target="_blank"><img
+                                src="Images/Insta.svg" alt="Instagram icon's button" /></a></ul>
+                    <ul id="linkedin-btn"><a href="https://www.linkedin.com/in/syazanie/" target="_blank"><img
+                                src="Images/Linkedin.svg" alt="Linkedin icon's button" /></a></ul>
                 </div>
             </div>
-            <div class = "about-me-section">
-                <h2 class = "content-item" id = "about-me-title">About</h2>
-                <p class = "content-item" id = "about-me">Hello! My name is Syazanie Amirin and currently pursuing a degree in <strong>Software Engineering</strong> at Universiti Kuala Lumpur MIIT, Malaysia. My main focus is pretty much only on <strong>UI/UX designs</strong>, <strong>Python</strong> projects but I've also been delving into <strong>web development</strong>. At least the <strong>front-end</strong> part of it.</p>
+            <div class="about-me-section">
+                <h2 class="content-item" id="about-me-title">About</h2>
+                <p class="content-item" id="about-me">Hello! My name is Muhammad Syazanie Amirin bin Othman. I'm from
+                    Kuala Lumpur, Malaysia (My hometown is in Penang). <br><br>I'm currently studying software
+                    engineering at Universiti Kuala Lumpur MIIT,
+                    Kuala Lumpur.<br><br>My expertise currently is in the frontend part of the web development which:
+                    <strong>HTML, CSS & JS</strong>. Although, I'm also learning React, Vite & Node at the moment.
+                </p>
             </div>
             <!--NANTI BUH MAX-WIDTH KAT PROJECT SECTION PUNYA PROJECTS-->
-            <div class = projects-section>
-                <h2 class = "content-item" id = "projects-title">Projects</h2>
-                <div class = "project-tinta content-item">
+            <div class=projects-section>
+                <h2 class="content-item" id="projects-title">Projects</h2>
+                <div class="project-tinta content-item">
                     <!--First column-->
-                    <div class = "project-tinta-image project-tinta-col">
-                        <p>hello</p>
+                    <div class="project-tinta-image project-tinta-col" style="max-height: 300px;">
+                        <img src="Images/Train Malaysia Thumbnail.svg" style="width: 100%; height: 100%;">
                     </div>
                     <!--Second column-->
-                    <div class = "project-tinta-text project-tinta-col">
-                        <!--MAKE THIS MORE DRY NANTI. BUH CLASS INSTEAD OF TEXT-->
-                        <h3 class = "project-item" id = "project-tinta-title">Test</h3>
-                        <p class = "project-item" id = "project-tinta-description">This is a test.</p>
-                        <button type = "button" class = "project-item" id = "project-tinta-button">View</button>
+                    <div class="project-tinta-text project-tinta-col">
+                        <h3 class="project-item" id="project-tinta-title">Train Malaysia</h3>
+                        <p class="project-item" id="project-tinta-description">A website to look at Klang Valley's
+                            transit info, KTM's schedule & more!</p>
+                        <a href="https://trainmalaysia.com/" target="_blank"><button type="button" class="project-item"
+                                id="project-tinta-button">View</button></a>
                     </div>
                 </div>
             </div>
         </main>
-        
-        <footer class = "footer">
-            <p class = "content-item" id = "footer-text">Designed in <strong>Figma</strong>, and built using only <strong>vanilla HTML, CSS</strong>, and <strong>JavaScript</strong> — all by me ❤️</p>
+
+        <footer class="footer">
+            <p class="content-item" id="footer-text">Designed in <strong>Figma</strong>, and built using
+                <strong>vanilla HTML, CSS</strong>, and <strong>JavaScript</strong>
+            </p>
         </footer>
     </div>
 
-    <div id = "mobile-menu-opened">
-        <div class = "navbar-items-mobile-menu">
-            <p class = "navbar-links-item-mobile-menu" id = "about-link-mobile-menu">About</p>
-            <p class = "navbar-links-item-mobile-menu" id = "projects-link-mobile-menu">Projects</p>
-            <p class = "navbar-links-item-mobile-menu" id = "contact-me-link-mobile-menu">Contact Me</p>
+    <div id="mobile-menu-opened">
+        <div class="navbar-items-mobile-menu">
+            <p class="navbar-links-item-mobile-menu" id="about-link-mobile-menu" style="opacity: 0.3;">About</p>
+            <p class="navbar-links-item-mobile-menu" id="projects-link-mobile-menu" style="opacity: 0.3;">Projects</p>
+            <p class="navbar-links-item-mobile-menu" id="contact-me-link-mobile-menu" style="opacity: 0.3;">Contact Me
+            </p>
         </div>
     </div>
-    <script src = "JS/navbar.js"></script>
+    <script src="JS/navbar.js"></script>
 </body>
+
 </html>
